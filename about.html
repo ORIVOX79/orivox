@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>À Propos — Orivox Entertainment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cinzel:wght@400;600;800&family=Lato:wght@300;400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --gold: #c9a84c; --gold-light: #e8c97a; --gold-dim: #7a5c1e;
+      --navy: #080d1a; --navy-mid: #0d1528; --navy-light: #121f3a;
+      --cream: #f5ede0; --cream-dim: #d4c4a8;
+      --violet: #2a1550; --white: #ffffff;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Lato', sans-serif; background: var(--navy); color: var(--cream); overflow-x: hidden; cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAClUlEQVR42tWXvWtTURiH2yQlSUkgJdCCQwiEQgihW+hShNBVuCAGqyhXiw5WMji4ODh0ydo/IZMImTJlFT/wCxV0EHEQU1T8QEEUBIfj+zt9ArH1oxTLvQYeOHnPe37vxzn35GZi4n/63L16aMQkJGD03c/vV2AFSBpTRtrIbiPNXHKUzL8MnDIyRs4oGEVj1piDWWwFfDKs2XsiBE9SWZ4AB4yyMW9UjRpUsZXxKbImjcaegqdo7QyiFaNuNIwlo2ksQxNbA58Ka2bQSO06ibHg01RSospFggXGihEaqxBiC/BZZE0JjeldJTHW9iwL1dIF4yDiCtQ2LhnrRgfWsbXxCVizgEYRzT9vB4cmTetKCKi9LWPNuGxsGF2jZ/Shh20DnzXWNNEooSntyb+1Ps/+1aiiRWUdggxeXjvshtePuE3QWDbN4dNhTQuNGpr5324F1WdoV4V9DKhGgleMmwr46tZR9/r2MffmznGPxrJpTj74dlgboFVBO7OjC2N7nyPTOocppKVdH/xGywd7e++Ee/cgdO8fnvJoLJvm5EMSXdaGaNXRzu04CyQwxUVS5nEKaKP2daDqfPD7J92HR6fdx8dn3KcnZz0ay6Y5n8RWJwasbaPVQLtArF8eviIXyhKPlU52V/urFqtKBVLQz0/PuS/Pzns0ls0nYT7y5Ux00VhBc54YPx9GEshypVY5vSGPV29I9Wq1qlXAr8/b7tuLCx6NZdOcfOQ73OpCD40QzSoxstsTSGCc48Quc8HoIPXVUh027bcqVdUK/H3zokdj2TQnH/myDX00VtGsEUOxErFKIPItiPwQRv4YRnsRRX4Vx+LHKPKf41i8kET+ShaLl9JYvJbH4o9JLP6axebP6X5+fgB2hUUTb6BcIwAAAABJRU5ErkJggg==") 16 16, auto; }
+    *, *::before, *::after { cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAClUlEQVR42tWXvWtTURiH2yQlSUkgJdCCQwiEQgihW+hShNBVuCAGqyhXiw5WMji4ODh0ydo/IZMImTJlFT/wCxV0EHEQU1T8QEEUBIfj+zt9ArH1oxTLvQYeOHnPe37vxzn35GZi4n/63L16aMQkJGD03c/vV2AFSBpTRtrIbiPNXHKUzL8MnDIyRs4oGEVj1piDWWwFfDKs2XsiBE9SWZ4AB4yyMW9UjRpUsZXxKbImjcaegqdo7QyiFaNuNIwlo2ksQxNbA58Ka2bQSO06ibHg01RSospFggXGihEaqxBiC/BZZE0JjeldJTHW9iwL1dIF4yDiCtQ2LhnrRgfWsbXxCVizgEYRzT9vB4cmTetKCKi9LWPNuGxsGF2jZ/Shh20DnzXWNNEooSntyb+1Ps/+1aiiRWUdggxeXjvshtePuE3QWDbN4dNhTQuNGpr5324F1WdoV4V9DKhGgleMmwr46tZR9/r2MffmznGPxrJpTj74dlgboFVBO7OjC2N7nyPTOocppKVdH/xGywd7e++Ee/cgdO8fnvJoLJvm5EMSXdaGaNXRzu04CyQwxUVS5nEKaKP2daDqfPD7J92HR6fdx8dn3KcnZz0ay6Y5n8RWJwasbaPVQLtArF8eviIXyhKPlU52V/urFqtKBVLQz0/PuS/Pzns0ls0nYT7y5Ux00VhBc54YPx9GEshypVY5vSGPV29I9Wq1qlXAr8/b7tuLCx6NZdOcfOQ73OpCD40QzSoxstsTSGCc48Quc8HoIPXVUh027bcqVdUK/H3zokdj2TQnH/myDX00VtGsEUOxErFKIPItiPwQRv4YRnsRRX4Vx+LHKPKf41i8kET+ShaLl9JYvJbH4o9JLP6axebP6X5+fgB2hUUTb6BcIwAAAABJRU5ErkJggg==") 16 16, auto !important; }
+    #cr { position: fixed; width: 42px; height: 42px; border-radius: 50%; border: 2px solid rgba(232,201,122,0.9); box-shadow: 0 0 10px 2px rgba(201,168,76,0.5); pointer-events: none; z-index: 2147483646; top: -100px; left: -100px; transform: translate(-50%,-50%); will-change: left, top; }
+
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.5rem 4rem; background: rgba(8,13,26,0.95);
+      backdrop-filter: blur(8px); border-bottom: 1px solid rgba(201,168,76,0.1);
+    }
+    .nav-logo {
+      display: flex; align-items: center; text-decoration: none;
+    }
+    .nav-logo img {
+      height: 52px; width: 52px; object-fit: contain;
+      border-radius: 50%;
+      filter: drop-shadow(0 0 10px rgba(0,180,255,0.35)) drop-shadow(0 0 3px rgba(201,168,76,0.3));
+      transition: filter .3s, transform .3s;
+    }
+    .nav-logo:hover img {
+      filter: drop-shadow(0 0 16px rgba(0,180,255,0.6)) drop-shadow(0 0 6px rgba(201,168,76,0.5));
+      transform: scale(1.05);
+    }
+    .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+    .nav-links a { font-family: 'Cinzel', serif; font-size: .7rem; letter-spacing: .15em; text-decoration: none; color: var(--cream-dim); text-transform: uppercase; transition: color .3s; }
+    .nav-links a:hover, .nav-links a.active { color: var(--gold); }
+
+    /* ABOUT HERO */
+    .about-hero {
+      min-height: 60vh; display: flex; align-items: center;
+      padding: 10rem 6rem 5rem;
+      position: relative; overflow: hidden;
+      background: linear-gradient(160deg, var(--violet) 0%, var(--navy) 60%);
+    }
+    .about-hero::after {
+      content: ''; position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 80% 50%, rgba(42,21,80,0.5) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .stars-about { position: absolute; inset: 0; overflow: hidden; z-index: 0; }
+    .astar { position: absolute; background: white; border-radius: 50%; animation: twk var(--d,3s) ease-in-out infinite var(--dl,0s); }
+    @keyframes twk { 0%,100%{opacity:var(--a,.1)} 50%{opacity:var(--b,.7)} }
+    .hero-text { position: relative; z-index: 1; max-width: 700px; }
+    .hero-label {
+      font-family: 'Cinzel', serif; font-size: .6rem; letter-spacing: .4em;
+      color: var(--gold); text-transform: uppercase; margin-bottom: 1.5rem;
+      display: flex; align-items: center; gap: 1rem;
+    }
+    .hero-label::before { content: ''; display: inline-block; width: 40px; height: 1px; background: var(--gold); }
+    .about-hero h1 {
+      font-family: 'Cinzel', serif; font-size: clamp(2.5rem, 6vw, 5rem);
+      font-weight: 800; color: var(--white); line-height: 1.1; margin-bottom: 1.5rem;
+    }
+    .about-hero h1 span { color: var(--gold); }
+    .about-hero p {
+      font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-weight: 300;
+      font-style: italic; color: var(--cream-dim); line-height: 1.7;
+    }
+
+    /* MAIN ABOUT */
+    .about-main {
+      display: grid; grid-template-columns: 1fr 1.5fr;
+      gap: 6rem; padding: 8rem 6rem; align-items: start;
+    }
+    .portrait-col { position: sticky; top: 8rem; }
+    .portrait-big {
+      width: 100%; aspect-ratio: 3/4;
+      background: linear-gradient(160deg, var(--violet) 0%, var(--navy-light) 100%);
+      border-radius: 4px; border: 1px solid rgba(201,168,76,0.2);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 6rem; opacity: 0.75;
+      box-shadow: 0 30px 80px rgba(0,0,0,0.5), 0 0 80px rgba(42,21,80,0.3);
+      position: relative; overflow: hidden;
+    }
+    .portrait-big::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(to bottom, transparent 50%, rgba(8,13,26,0.6) 100%);
+    }
+    .portrait-caption {
+      font-family: 'Cormorant Garamond', serif; font-size: .9rem; font-style: italic;
+      color: var(--gold-dim); text-align: center; margin-top: 1rem;
+    }
+    .portrait-social { display: flex; justify-content: center; gap: 1.5rem; margin-top: 1.5rem; }
+    .social-link {
+      font-family: 'Cinzel', serif; font-size: .55rem; letter-spacing: .15em;
+      color: var(--gold-dim); text-decoration: none; text-transform: uppercase;
+      border: 1px solid rgba(201,168,76,0.2); padding: .5rem 1rem; border-radius: 2px;
+      transition: color .3s, border-color .3s;
+    }
+    .social-link:hover { color: var(--gold); border-color: rgba(201,168,76,0.5); }
+
+    .about-text-col h2 {
+      font-family: 'Cormorant Garamond', serif; font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+      font-weight: 300; color: var(--white); margin-bottom: 2rem; line-height: 1.2;
+    }
+    .about-text-col h2 em { font-style: italic; color: var(--gold); }
+    .about-text-col p {
+      font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; font-weight: 300;
+      line-height: 1.9; color: var(--cream-dim); margin-bottom: 2rem;
+    }
+    .section-break {
+      display: flex; align-items: center; gap: 1.5rem; margin: 3rem 0;
+    }
+    .break-line { flex: 1; height: 1px; background: linear-gradient(to right, var(--gold), transparent); }
+    .break-ornament { font-family: 'Cormorant Garamond', serif; color: var(--gold); opacity: 0.5; font-size: 1.2rem; }
+
+    /* Inspirations */
+    .inspirations { margin: 3rem 0; }
+    .insp-label {
+      font-family: 'Cinzel', serif; font-size: .58rem; letter-spacing: .25em;
+      color: var(--gold); text-transform: uppercase; margin-bottom: 1.5rem;
+      display: flex; align-items: center; gap: .8rem;
+    }
+    .insp-label::before { content: ''; display: inline-block; width: 30px; height: 1px; background: var(--gold); }
+    .insp-grid { display: flex; flex-wrap: wrap; gap: .8rem; }
+    .insp-tag {
+      font-family: 'Cormorant Garamond', serif; font-size: 1rem; font-style: italic;
+      color: var(--cream-dim); background: rgba(18,31,58,0.5);
+      border: 1px solid rgba(201,168,76,0.15); padding: .5rem 1.2rem;
+      border-radius: 2px; transition: border-color .3s, color .3s;
+    }
+    .insp-tag:hover { border-color: rgba(201,168,76,0.4); color: var(--gold-light); }
+
+    /* Numbers */
+    .numbers-strip {
+      background: var(--navy-mid); padding: 5rem 6rem;
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem;
+      text-align: center; border-top: 1px solid rgba(201,168,76,0.1);
+    }
+    .number-item {}
+    .number-val {
+      font-family: 'Cinzel', serif; font-size: 2.5rem; font-weight: 800;
+      color: var(--gold); display: block; margin-bottom: .5rem;
+    }
+    .number-label {
+      font-family: 'Lato', sans-serif; font-size: .8rem; letter-spacing: .1em;
+      color: var(--cream-dim); text-transform: uppercase;
+    }
+
+    /* Q&A */
+    .qa-section { padding: 7rem 6rem; background: var(--navy); }
+    .qa-label {
+      font-family: 'Cinzel', serif; font-size: .6rem; letter-spacing: .4em;
+      color: var(--gold); text-transform: uppercase; margin-bottom: 3rem;
+      display: flex; align-items: center; gap: 1rem;
+    }
+    .qa-label::before { content: ''; display: inline-block; width: 40px; height: 1px; background: var(--gold); }
+    .qa-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+    .qa-item {
+      padding: 2rem; background: rgba(18,31,58,0.3);
+      border: 1px solid rgba(201,168,76,0.1); border-radius: 3px;
+      transition: border-color .3s;
+    }
+    .qa-item:hover { border-color: rgba(201,168,76,0.3); }
+    .qa-q {
+      font-family: 'Cinzel', serif; font-size: .8rem; letter-spacing: .1em;
+      color: var(--gold); margin-bottom: 1rem;
+    }
+    .qa-a {
+      font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-weight: 300;
+      line-height: 1.8; color: var(--cream-dim);
+    }
+
+    /* Contact */
+    .contact-strip {
+      background: linear-gradient(135deg, var(--violet) 0%, var(--navy-mid) 100%);
+      padding: 5rem 4rem; text-align: center;
+    }
+    .contact-strip h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.8rem, 3vw, 2.8rem); font-weight: 300; color: var(--white); margin-bottom: 1rem; }
+    .contact-strip p { color: var(--cream-dim); margin-bottom: 2.5rem; font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; }
+    .contact-btn { display: inline-block; font-family: 'Cinzel', serif; font-size: .7rem; letter-spacing: .2em; text-transform: uppercase; text-decoration: none; color: var(--navy); background: var(--gold); padding: 1rem 2.5rem; border-radius: 2px; transition: transform .3s, box-shadow .3s; }
+    .contact-btn:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(201,168,76,0.3); }
+
+    footer { background: var(--navy); border-top: 1px solid rgba(201,168,76,0.1); padding: 3rem 4rem; display: flex; align-items: center; justify-content: space-between; }
+    footer p { font-family: 'Cinzel', serif; font-size: .6rem; letter-spacing: .15em; color: var(--gold-dim); }
+    .footer-links { display: flex; gap: 2rem; }
+    .footer-links a { font-family: 'Cinzel', serif; font-size: .6rem; letter-spacing: .15em; color: var(--gold-dim); text-decoration: none; text-transform: uppercase; transition: color .3s; }
+    .footer-links a:hover { color: var(--gold); }
+
+    @media (max-width: 900px) {
+      nav { padding: 1.2rem 2rem; }
+      .about-hero { padding: 8rem 2rem 4rem; }
+      .about-main { grid-template-columns: 1fr; padding: 5rem 2rem; gap: 3rem; }
+      .portrait-col { position: static; }
+      .numbers-strip { grid-template-columns: repeat(2, 1fr); padding: 4rem 2rem; }
+      .qa-section { padding: 5rem 2rem; }
+      .qa-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div id="cr"></div>
+
+  <nav>
+    <a href="/" class="nav-logo">
+      <img src="Logo_Orivox.png" alt="Orivox Entertainment" />
+    </a>
+    <ul class="nav-links">
+      <li><a href="/">Accueil</a></li>
+      <li><a href="/#romans">Romans</a></li>
+      <li><a href="about.html" class="active">À Propos</a></li>
+      <li><a href="/#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <div class="about-hero">
+    <div class="stars-about" id="starsAbout"></div>
+    <div class="hero-text">
+      <div class="hero-label">L'Auteure</div>
+      <h1>Votre <span>Nom</span><br>d'Auteure</h1>
+      <p>Tisseuse de mondes, exploratrice de l'impossible,<br>raconteuse d'histoires qui persistent longtemps après la dernière page.</p>
+    </div>
+  </div>
+
+  <!-- Main About -->
+  <div class="about-main">
+    <div class="portrait-col">
+      <div class="portrait-big">✦</div>
+      <p class="portrait-caption">Votre Nom, auteure de fantasy et de science-fiction</p>
+      <div class="portrait-social">
+        <a href="#" class="social-link">Instagram</a>
+        <a href="#" class="social-link">Goodreads</a>
+      </div>
+    </div>
+
+    <div class="about-text-col">
+      <h2>Une plume nourrie de <em>mystères</em> et d'étoiles</h2>
+      <p>
+        Parlez de vous ici — votre enfance, ce qui vous a donné le goût de l'écriture, le premier livre qui vous a bouleversée. C'est la section la plus personnelle du site, celle où vos lecteurs apprendront à vous connaître vraiment.
+      </p>
+      <p>
+        Comment êtes-vous venue à l'écriture de fantasy ou de science-fiction ? Quel est votre rapport aux mondes imaginaires ? Expliquez ce qui vous attire dans ces genres, ce que vous cherchez à faire ressentir à travers vos histoires.
+      </p>
+
+      <div class="section-break">
+        <div class="break-line"></div>
+        <div class="break-ornament">✦</div>
+        <div class="break-line" style="background: linear-gradient(to left, var(--gold), transparent);"></div>
+      </div>
+
+      <p>
+        Parlez de votre processus créatif. Comment naissent vos personnages ? Comment construisez-vous vos univers ? Est-ce que vous dessinez des cartes, des arbres généalogiques, des fiches de personnages ? Cette partie fascine toujours les lecteurs passionnés.
+      </p>
+      <p>
+        Ce que vous souhaitez que vos lecteurs emportent avec eux. Un sentiment, une question, une émotion. Pourquoi raconter ces histoires plutôt que d'autres ?
+      </p>
+
+      <div class="inspirations">
+        <div class="insp-label">Mes inspirations</div>
+        <div class="insp-grid">
+          <span class="insp-tag">Brandon Sanderson</span>
+          <span class="insp-tag">Ursula K. Le Guin</span>
+          <span class="insp-tag">Neil Gaiman</span>
+          <span class="insp-tag">Patrick Rothfuss</span>
+          <span class="insp-tag">N. K. Jemisin</span>
+          <span class="insp-tag">La mythologie grecque</span>
+          <span class="insp-tag">L'astronomie</span>
+          <span class="insp-tag">La musique orchestrale</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Numbers -->
+  <div class="numbers-strip">
+    <div class="number-item">
+      <span class="number-val">4</span>
+      <span class="number-label">Romans publiés</span>
+    </div>
+    <div class="number-item">
+      <span class="number-val">+1200</span>
+      <span class="number-label">Lecteurs</span>
+    </div>
+    <div class="number-item">
+      <span class="number-val">3</span>
+      <span class="number-label">Univers créés</span>
+    </div>
+    <div class="number-item">
+      <span class="number-val">∞</span>
+      <span class="number-label">Mondes à explorer</span>
+    </div>
+  </div>
+
+  <!-- Q&A -->
+  <section class="qa-section">
+    <div class="qa-label">Questions fréquentes</div>
+    <div class="qa-grid">
+      <div class="qa-item">
+        <div class="qa-q">Combien de temps mettez-vous à écrire un roman ?</div>
+        <div class="qa-a">Votre réponse ici — combien de mois, quel rythme d'écriture, comment vous organisez votre temps entre écriture et vie quotidienne.</div>
+      </div>
+      <div class="qa-item">
+        <div class="qa-q">Vos livres sont-ils disponibles en format papier ?</div>
+        <div class="qa-a">Votre réponse ici — si vous publiez en e-book uniquement ou aussi en papier, les plateformes disponibles, etc.</div>
+      </div>
+      <div class="qa-item">
+        <div class="qa-q">Comment est né votre premier roman ?</div>
+        <div class="qa-a">Votre réponse ici — l'anecdote, l'étincelle, le rêve, la conversation qui a tout déclenché. C'est souvent la question préférée des lecteurs.</div>
+      </div>
+      <div class="qa-item">
+        <div class="qa-q">Travaillez-vous sur un nouveau projet en ce moment ?</div>
+        <div class="qa-a">Votre réponse ici — sans trop en dire si vous préférez garder la surprise, mais assez pour titiller la curiosité de vos lecteurs fidèles.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <div class="contact-strip" id="contact">
+    <h2>Échangeons ensemble</h2>
+    <p>Lecteurs, libraires, médias — je lis chaque message avec attention.</p>
+    <a href="mailto:orivox@outlook.com" class="contact-btn">M'écrire</a>
+  </div>
+
+  <footer>
+    <p>© 2025 Orivox Entertainment — orivox.fr — Tous droits réservés</p>
+    <div class="footer-links">
+      <a href="/">Accueil</a>
+      <a href="/#romans">Romans</a>
+      <a href="about.html">À Propos</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </footer>
+
+  <script>
+    // Custom cursor
+    // Cursor ring
+    (function() {
+      var ring = document.getElementById('cr');
+      var mx = -100, my = -100, rx = -100, ry = -100;
+      document.addEventListener('mousemove', function(e) {
+        mx = e.clientX; my = e.clientY;
+      }, { passive: true });
+      (function animateRing() {
+        rx += (mx - rx) * 0.13; ry += (my - ry) * 0.13;
+        ring.style.left = rx + 'px'; ring.style.top = ry + 'px';
+        requestAnimationFrame(animateRing);
+      })();
+    })();
+    const sa=document.getElementById('starsAbout');
+    for(let i=0;i<100;i++){const s=document.createElement('div');s.classList.add('astar');const sz=Math.random()*2+.5;s.style.cssText=`left:${Math.random()*100}%;top:${Math.random()*100}%;width:${sz}px;height:${sz}px;--d:${2+Ma
