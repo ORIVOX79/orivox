@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://orivox.fr/sitemap.xml
