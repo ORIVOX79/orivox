@@ -207,12 +207,19 @@
       .content-section, .gallery-section, .other-books { padding: 4rem 2rem; }
       .scene-block, .scene-block.reverse { grid-template-columns: 1fr; direction: ltr; }
       .mosaic { grid-template-columns: repeat(2, 1fr); }
-      nav { padding: 1.2rem 2rem; }
+      nav { padding: 1rem 1.5rem; flex-wrap: wrap; gap: 0.5rem; }
       footer { flex-direction: column; gap: 1.5rem; text-align: center; }
     }
     @media (max-width: 600px) {
       .mosaic { grid-template-columns: 1fr; }
       .chars-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 600px) {
+      nav { padding: 0.8rem 1rem; justify-content: center; gap: 0.4rem; }
+      .nav-logo img { height: 38px; width: 38px; }
+      .nav-links { gap: 0.6rem 1.2rem; flex-wrap: wrap; justify-content: center; width: 100%; }
+      .nav-links a { font-size: .6rem; }
     }
   </style>
   <link rel="canonical" href="https://orivox.fr/inversion-des-ombres/" />

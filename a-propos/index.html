@@ -115,12 +115,19 @@
       .about-main { grid-template-columns: 1fr; padding: 5rem 2rem; gap: 3rem; }
       .portrait-wrap { max-width: 300px; margin: 0 auto; }
       .univers-section, .romans-section { padding: 5rem 2rem; }
-      nav { padding: 1.2rem 2rem; }
+      nav { padding: 1rem 1.5rem; flex-wrap: wrap; gap: 0.5rem; }
       footer { flex-direction: column; gap: 1.5rem; text-align: center; }
     }
 
     @media (max-width: 600px) {
       .nav-links { gap: 0.8rem; justify-content: center; }
+      .nav-links a { font-size: .6rem; }
+    }
+
+    @media (max-width: 600px) {
+      nav { padding: 0.8rem 1rem; justify-content: center; gap: 0.4rem; }
+      .nav-logo img { height: 38px; width: 38px; }
+      .nav-links { gap: 0.6rem 1.2rem; flex-wrap: wrap; justify-content: center; width: 100%; }
       .nav-links a { font-size: .6rem; }
     }
   </style>

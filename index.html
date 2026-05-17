@@ -202,6 +202,7 @@
     .books-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      justify-content: center;
       gap: 3rem 2rem;
       margin-top: 4rem;
     }
@@ -371,16 +372,19 @@
 
     /* ===== RESPONSIVE ===== */
     @media (max-width: 900px) {
-      nav { padding: 1.2rem 2rem; }
+      nav { padding: 1rem 1.5rem; flex-wrap: wrap; gap: 0.5rem; }
       section { padding: 5rem 2rem; }
       .about-inner { grid-template-columns: 1fr; gap: 3rem; }
       .author-portrait { max-width: 300px; margin: 0 auto; }
       footer { flex-direction: column; gap: 1.5rem; text-align: center; }
     }
     @media (max-width: 600px) {
-      .nav-links { gap: 0.8rem; flex-wrap: wrap; justify-content: center; }
-      .nav-links a { font-size: .65rem; }
-      .books-grid { grid-template-columns: repeat(2, 1fr); gap: 2rem 1rem; justify-items: center; }
+      nav { padding: 0.8rem 1rem; justify-content: center; gap: 0.4rem; }
+      .nav-logo img { height: 38px; width: 38px; }
+      .nav-links { gap: 0.6rem 1.2rem; flex-wrap: wrap; justify-content: center; width: 100%; }
+      .nav-links a { font-size: .6rem; }
+      .books-grid { grid-template-columns: 1fr 1fr; gap: 1.5rem 0.8rem; padding: 0 0.5rem; }
+      .books-grid .book-card { width: 100%; }
     }
   </style>
   <meta name="description" content="Découvrez les romans de João Woso : fantasy, romance et thriller dystopique. Voyagez au-delà des étoiles, une page à la fois. Orivox Entertainment." />
